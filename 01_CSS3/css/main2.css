@@ -1,0 +1,13 @@
+@charset "utf-8";
+div{
+    border: 1px solid #000; width: 720px;
+}
+p{
+    margin-left: 40px;
+}
+span{
+    color: red;
+}
+.h21{
+    color: blue;
+}
