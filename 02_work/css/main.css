@@ -1,0 +1,42 @@
+@charset "utr-8";
+body{
+    font-family:"맑은 고딕","malgun gothic",sans-serif;
+}
+
+/* 여백 초기화작업 */
+*{margin: 0;padding: 0;}
+div{
+    border: 5px solid red;
+    width: 390px;
+    padding: 10px;
+}
+div h1{
+    font-size: 19px;
+    color: #4162c3;
+    margin-bottom: 18px;
+}
+.span1{
+    background: #0b6dce;
+    color: #fff;
+    font-size: 11px;
+    border: 1px solid #1f5378;
+}
+div .p1{
+    color: #838383;
+}
+div .price{
+    color: #ce516f;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "궁서";
+}
+div .span3{
+    color: #445696;
+    font-weight: 900;
+}
+p{
+    line-height: 31px;
+}
+div p .date{
+    font-style: italic;
+}
