@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{
+    font-family: "맑은고딕", "malgun gothic", sans-serif;
+    background: #ccc;
+}
+
+.wrap{
+    width: 443px;
+    margin: auto;
+    font-size: 30px;
+    padding: 10px;
+    background: #fff;
+}
+.box1{
+    width: 443px;
+    height: 179px;
+    background: #ffdfdf;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 170px;
+    border-radius: 14px;
+    font-weight: 900;
+    color: #747c83;
+}
+.box2{
+    width: 445px;
+    height: 269px;
+    background: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 250px;
+}
+.box3{
+    width: 132px;
+    height: 270px;
+    background: #ffe1c3;
+    float: left;
+    margin-right: 8px;
+    border-radius: 14px;
+    font-weight: 900;
+    color: #747c83;
+}
+.box4{
+    width: 304px;
+    height: 270px;
+    background: #d9f8ff;
+    float: left;
+    border-radius: 14px;
+    font-weight: 900;
+    color: #747c83;
+}
+.box5{
+    width: 444px;
+    height: 60px;
+    background: #e1f7de;
+    text-align: center;
+    border-radius: 36px;
+    line-height: 60px;
+    border-radius: 14px;
+    font-weight: 900;
+    color: #747c83;
+}
