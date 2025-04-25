@@ -1,0 +1,111 @@
+@charset "utf-8";
+body{font-family: "맑은 고딕", "malgin gothic",sans-serif;}
+
+.header{
+    width: 1000px;
+    height: 1000px;
+    background: #00d2ff;
+    position: relative;
+}
+.header .first{
+    width: 200px;
+    height: 200px;
+    background: #000684;
+}
+.header .box2{
+    width: 200px;
+    height: 200px;
+    background: #4ce440;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+.header .box3{
+    width: 200px;
+    height: 200px;
+    background: #940000;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+.header .box4{
+    width: 200px;
+    height: 200px;
+    background: #000684;
+    position: absolute;
+    bottom: 0px;
+}
+.header .box5{
+    width: 200px;
+    height: 200px;
+    background: #4ce440;
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+}
+.header .box6{
+    width: 200px;
+    height: 200px;
+    background: #940000;
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+}
+.header .box7{
+    width: 200px;
+    height: 200px;
+    background: #000684;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.header .box8{
+    width: 200px;
+    height: 200px;
+    background: #4ce440;
+    position: absolute;
+    right:100px;
+    top: 100px;
+}
+.header .box9{
+    width: 200px;
+    height: 200px;
+    background: #940000;
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+.header .box10{
+    width: 200px;
+    height: 200px;
+    background: #000684;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.header .box11{
+    width: 200px;
+    height: 200px;
+    background: #4ce440;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+.header .box12{
+    width: 200px;
+    height: 200px;
+    background: #940000;
+    position: absolute;
+    right: 200px;
+    bottom: 200px;
+}
+.header .last{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    position: absolute;
+    right: 400px;
+    bottom: 400px;
+}
+
+
