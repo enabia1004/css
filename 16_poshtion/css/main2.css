@@ -6,6 +6,7 @@ body{font-family: "맑은 고딕", "malgin gothic",sans-serif;}
     height: 1000px;
     background: #00d2ff;
     position: relative;
+    margin: auto;
 }
 .header .first{
     width: 200px;
