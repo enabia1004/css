@@ -18,16 +18,16 @@ a{text-decoration: none;}
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -145px;
-    margin-top: -10px;
+    margin-left: -90px;
+    margin-top: -5px;
 }
 .header h1 a{
     display: block;
-    width: 278px;
-    height: 20px;
+    width: 139px;
+    height: 10px;
     background: url("../images/hankook-logo.jpg");
     position: absolute;
-    background-size: 278px 20px;
+    background-size: 139px 10px;
     text-indent: -99999px;
 }
 .header .m_menu{
