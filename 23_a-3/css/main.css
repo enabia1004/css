@@ -84,6 +84,8 @@ a{text-decoration: none;}
     width: 200px;
     height: 100px;
     background: gray;
+    text-align: center;
+    line-height: 100px;
 }
 .wrap .footer .copymenu{
     width: 1000px;
