@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Roboto", "noto sans KR" sans-serif;
+}
+*{margin: 0;padding: 0;}
+button{border: none;background: none;cursor: pointer;}
+
+.section3{
+    width: 100%;
+    background: #ed174d;
+    padding: 60px 0;
+    text-align: center;
+}
+.section3 h2{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.section3 form fieldset{
+    border: none;
+}
+.section3 form fieldset legend{
+    /* 화면 밖에 브라우저 밖으로 보냄 */
+    /* 자리차지 */
+    /* text-indent: -99999px; */
+    /* 폼태그안에서는 브라우저 밖으로 보냄 */
+    position: absolute;
+    left: -99999px;
+}
+/* .section3 form fieldset .area{
+    width: 350px;
+    height: 60px;
+    margin: auto;
+} */
+.section3 form fieldset input{
+    width: 320px;
+    height: 60px;
+    background:none;
+    border: none;
+    border-bottom: 1px solid #fad6f0;
+}
+.section3 form fieldset input::placeholder{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.section3 form fieldset button{
+    width: 30px;
+    height: 30px;
+    background: url("../images/ico-search-lg-white.png") no-repeat;
+    background-size: 30px;
+    text-indent: -99999px;
+    margin-left: -40px;
+}
+
