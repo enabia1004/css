@@ -1,0 +1,157 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+body{
+    font-family: "Nanum Gothic", sans-serif;
+}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none;background: none;cursor: pointer;}
+
+.section{
+    width: 100%;
+    background: #f9f9f9;
+    padding: 100px 0 80px;
+}
+.section .inner{
+    width: 1694px;
+    /* background: gold; */
+    margin: auto;
+}
+.section .inner h2{
+    text-align: center;
+    color: #222;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.section .inner .list{
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+}
+.section .inner .list li a{
+    color: #717171;
+    font-size: 13px;
+}
+.section .inner .product{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    margin-top: 80px;
+}
+.section .inner .product li{
+    width: 313.2px;
+    height: 408px;
+    /* background: gold; */
+}
+.section .inner .product li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.section .inner .product li a img{
+    width: 100%;
+    height: 100%;
+}
+.section .inner .product li a .bar{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -50%;
+    padding: 22px 0;
+    transition: all 0.2s ease-in-out;
+}
+.section .inner .product li a:hover .bar{
+    bottom: 0;
+}
+.section .inner .product li a .bar .color{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.section .inner .product li a .bar .color span{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius:100% ;
+}
+.section .inner .product li a .bar .color span:first-child{
+    background: #fff;
+}
+.section .inner .product li a .bar .color span:nth-child(2){
+    background: #f7ddac;
+}
+.section .inner .product li a .bar .color span:nth-child(3){
+    background: #ff9490;
+}
+.section .inner .product li a .bar .color span:nth-child(4){
+    background: #c70c00;
+}
+.section .inner .product li a .bar .color span:nth-child(5){
+    background: #dbe4b9;
+}
+.section .inner .product li a .bar .color span:nth-child(6){
+    background: #8dcf2d;
+}
+.section .inner .product li a .bar .color span:nth-child(7){
+    background: #65bee6;
+}
+.section .inner .product li a .bar .color span:nth-child(8){
+    background: #c083e2;
+}
+.section .inner .product li a .bar .color span:last-child{
+    background: #000;
+}
+.section .inner .product li a .bar p{
+    color: #555;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px 0;
+}
+.section .inner .product li a .bar h5{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+}
+.section .inner .product li a .bar .sold{
+    text-align: center;
+}
+.section .inner .product li a .bar .sold button:first-child{
+    color: #7f2131;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #7f2131;
+}
+.section .inner .product li a .bar .sold button:nth-child(2){
+    color: #000;
+    font-size: 12px;
+    font-weight: 900;
+    border-bottom: 1px solid #000;
+}
+/* .section .inner .product li a .bar .sold button:last-child{
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #000;
+    padding: 4px;
+} */
+.section .inner .product li a .bar .sold .but1{
+    color: #000;
+    background: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #000;
+    padding: 4px;
+}
+
+
+
+
+
