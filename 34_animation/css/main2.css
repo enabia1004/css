@@ -21,11 +21,11 @@ body{
 }
 
 @keyframes box1_ani {
-    0%{left: 456px;top:1px ;}
+    0%{left: 458px;top:1px ;}
     25%{left: 1360px;top: 1px;}
     50%{left: 1360px;top: 200px;}
-    75%{left: 456px;top: 200px;}
-    100%{left: 456px;top: 0px;}
+    75%{left: 458px;top: 200px;}
+    100%{left: 458px;top: 0px;}
 }
 .header2{
     width: 1000px;
