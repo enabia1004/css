@@ -22,8 +22,8 @@ body{
 
 @keyframes box1_ani {
     0%{left: 456px;top:1px ;}
-    25%{left: 1355px;top: 1px;}
-    50%{left: 1355px;top: 200px;}
+    25%{left: 1360px;top: 1px;}
+    50%{left: 1360px;top: 200px;}
     75%{left: 456px;top: 200px;}
     100%{left: 456px;top: 0px;}
 }
