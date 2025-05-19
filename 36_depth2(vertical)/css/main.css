@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.header{
+    width: 1100px;
+    height: 66px;
+    background: #fff;position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.header h1 a{
+    display: block;
+    width: 113px;
+    height: 37px;
+    background: url("../images/kortek_logo.jpg")no-repeat;
+    text-indent: -99999px;
+}
+.header .gnb{
+    display: flex;
+    gap: 65px;
+}
+.header .gnb>li{
+    position: relative;
+}
+.header .gnb>li::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 27px;
+    background: #C8C8C8;
+    right: -32.5px;
+    top: 0;
+}
+.header .gnb>li:last-child::after{
+    display: none;
+}
+.header .gnb>li:hover> a{
+    border-bottom: 2px solid #3381C1;
+    color: #3381C1;
+}
+/* 2단메뉴 */
+.header .gnb>li>.depth2{
+    width: 166px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 22px;
+    text-align: center;
+    padding: 32px 0 0;
+    display: none;
+}
+.header .gnb>li:hover .depth2{
+    display: block;
+}
+.header .gnb>li>.depth2>li{
+    line-height: 36px;
+}
+.header .gnb>li>.depth2>li:hover{
+    background: #3381C1;
+}
+.header .gnb>li>.depth2>li:hover>a{
+    color: #fff;
+    background: url("../images/icon_arrow2.png")no-repeat left center;
+}
+.header .gnb>li>.depth2>li>a{
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    padding: 0 20px;
+    /* border: 1px solid red; */
+}
+.header .gnb>li>a{
+    font-size: 14px;
+    font-weight: 700;
+    color: #565A5B;
+}
+.header .lang{
+    border: 1px solid #DBDBDB;
+    color: #8F9092;
+    padding: 6px 6px;
+}
+.main{
+    width: 100%;
+}
+.main .visual{
+    width: 100%;
+    height: 960px;
+    background: url("../images/mainslide_img01.jpg")no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
