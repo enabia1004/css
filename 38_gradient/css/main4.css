@@ -1,0 +1,42 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","margin gothic",sans-serif;
+}
+*{margin: 0;padding: 0;}
+
+.box1{
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(#079B07,#fff);
+    cursor: pointer;
+}
+.box2{
+    width: 128px;
+    height: 43px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 43px;
+    margin: 50px auto;
+    border-radius: 99px;
+    background-image: linear-gradient(#92D4F4,#2272C9);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
