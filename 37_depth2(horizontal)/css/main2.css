@@ -55,21 +55,78 @@ a{text-decoration: none;}
     margin: auto;
 }
 .inner .gnb{
+    width: 100%;
     height: 60px;
     display: flex;
+    margin: auto;
+    background: #fff;
     justify-content: center;
     align-items: center;
     gap: 70px;
+    position: relative;
 }
+.inner .gnb>li{
+    display: flex;
+}
+
 .inner .gnb>li>a{
+    display: block;
     font-size: 16px;
     color: #111;
     letter-spacing: -1px;
-    font-weight: 500;
+    /* font-weight: 500; */
+    /* border: 1px solid red; */
+    height: 60px;
+    line-height: 60px;
 }
 .inner .gnb>li:hover>a{
     color: #AEA480;
 }
+
+/* 2단 메뉴 */
+.inner .gnb>li>.depth2{
+    width: 1360px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    display: none;
+}
+
+.inner .gnb>li:hover .depth2{
+    display: flex;
+}
+.inner .gnb>li>.depth2 li a{
+    font-size: 14px;
+    color: #777;
+    letter-spacing: -1px;
+    
+}
+.inner .gnb>li>.depth2 li:hover{
+    font-weight: 500;
+    color: #000;
+}
+.inner .gnb>li>.depth2 .intro{
+    margin-left: 235px;
+}
+.inner .gnb>li>.depth2 .new{
+    margin-left: 480px;
+}
+.inner .gnb>li>.depth2 .bea{
+    margin-left: 550px;
+}
+.inner .gnb>li>.depth2 .her{
+    margin-left: 307px;
+}
+.inner .gnb>li>.depth2 .gap{
+    margin-left: 616px;
+}
+
+
 .main{
     width: 100%;
 }
