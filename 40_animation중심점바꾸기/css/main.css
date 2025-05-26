@@ -1,0 +1,135 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕";
+}
+
+*{margin: 0;padding: 0;}
+.box{
+    width: 1400px;
+    height: 740px;
+    margin: auto;
+    border: 11px solid #000;
+    position: relative;
+}
+
+/* 박스안에 마우스를 가져가면 일시정자/ 마우스를 벗어나면 재생 */
+.box:hover .clock{
+    animation-play-state: paused;
+}
+
+.box .clock{
+    position: absolute;
+    left: 50%;
+    margin-left: -82.5px;
+    top: 0;
+    /* border: 1px solid red; */
+    transform: rotate(45deg);
+    /* 중심축을 바꾸는 명령 */
+    transform-origin: center top;
+    animation: clock_ani 1s ease-in-out forwards infinite;
+}
+
+/* 애니메이션 설정 */
+@keyframes clock_ani {
+    0%{transform: rotate(45deg);}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(45deg);}
+}
+
+.box:hover .clock2{
+    animation-play-state: paused;
+}
+
+/* 아래쪽 시계 */
+.box .clock3{
+    position: absolute;
+    left: 50%;
+    margin-left: -82.5px;
+    bottom: -340px;
+    transform: rotate(-225deg);
+    transform-origin: center top ;
+    animation: clock3_ani 1s ease-in-out forwards infinite;
+}
+
+@keyframes clock3_ani {
+    0%{transform: rotate(-225deg);}
+    50%{transform: rotate(-135deg);}
+    100%{transform: rotate(-225deg);}
+}
+
+.box:hover .clock3{
+    animation-play-state: paused;
+}
+
+.box .clock4{
+    position: absolute;
+    left: 0;
+    margin-left: -82.5px;
+    top: 50%;
+    /* border: 10px solid red; */
+    transform: rotate(-120deg);
+    transform-origin: center top;
+    animation: clock4_ani 1s ease-in-out forwards infinite;
+}
+
+@keyframes clock4_ani {
+    0%{transform: rotate(-120deg);}
+    50%{transform: rotate(-45deg);}
+    100%{transform: rotate(-120deg);}
+}
+
+/* 오른쪽 시계 */
+.box .clock2{
+    position: absolute;
+    right: 0;
+    margin-right: -82.5px;
+    top: 50%;
+    transform: rotate(135deg);
+    transform-origin: center top;
+    animation: clock2_ani 1s ease-in-out forwards infinite;
+}
+
+/* clock2에 애니메이션 */
+@keyframes clock2_ani {
+    0%{transform: rotate(135deg);}
+    50%{transform: rotate(45deg);}
+    100%{transform: rotate(135deg);}
+}
+
+.box .line{
+    width: 8px;
+    height: 166px;
+    margin: auto;
+    background: #000;
+}
+.box .circle{
+    width: 165px;
+    height: 165px;
+    background: red url("../images/1.jpg")no-repeat 80%;
+    background-size: cover;
+    border-radius: 100%;
+    margin: auto;
+    border: 5px solid #000;
+}
+.box h3{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 42px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
