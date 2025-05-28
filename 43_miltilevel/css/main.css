@@ -29,13 +29,15 @@ a{text-decoration: none;}
 
 .content{
     width: 800px;
-    margin:auto;
+    margin:30px auto 15px;
     /* background: gold; */
     font-size: 15px;
     text-align: justify;
     /* 다단갯수설정 */
     column-count: 3;
+    /* 다단과다단간의 간격(gap) */
     column-gap: 30px;
+    /* 다단간의 경계선 */
     column-rule: 1px dotted #333;
 }
 .content h3,.content h4,.content p{
