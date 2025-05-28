@@ -1,0 +1,59 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;}
+
+.box{
+    display: flex;
+    width: 1140px;
+    height: 285px;
+    /* background: gold; */
+    margin: auto;
+    gap: 20px;
+}
+
+.box .text1{
+    width: 285px;
+    height: 100%;
+    filter: blur(8px);
+}
+.box .text1:hover{
+    background: url("../images/subimg01.png") no-repeat 285px 100%;
+    filter: invert(100%);
+}
+.box .text2{
+    width: 285px;
+    height: 100%;
+    filter: opacity(50%);
+}
+.box .text2:hover{
+    background: url("../images/subimg02.png") no-repeat 285px 100%;
+    filter: saturate(150%);
+}
+.box .text3{
+    width: 285px;
+    height: 100%;
+    filter: grayscale(100%);
+}
+.box .text4{
+    width: 285px;
+    height: 100%;
+    filter: drop-shadow(15px 15px 10px gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

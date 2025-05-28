@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{
+    
+}
+
+.test1{
+    /* 이미지 효과를 줄때 */
+    filter: blur(30px);
+}
+
+.test2{
+    /* 이미지밝기를 줄때 */
+    filter: brightness(200%);
+}
+
+.test3{
+    /* 이미지효과 명도대비 */
+    filter: contrast(150%);
+}
+
+.test4{
+    /* 이미지에 그림자효과 */
+    filter: drop-shadow(20px 10px 10px gray);
+    filter: drop-shadow(0px 0px 10px gray);
+}
+
+.test5{
+    /* 이미지 흑백처리 */
+    filter: grayscale(100%);
+}
+
+.test6{
+    /* 이미지 색조 효과 */
+    filter: sepia(100%);
+}
+
+.test7{
+    /* 이미지 채도 효과 */
+    filter: saturate(150%);
+}
+
+.test8{
+    /* 이미지 투명하게 하는 효과 */
+    filter: opacity(50%) blur(10px);
+}
+
+.test9{
+    /* 이미지 색상 반전 */
+    filter: invert(100%);
+}
+
+.test10{
+    /* 이미지 색조회전 */
+    filter: hue-rotate(100deg);
+}
+
+
+
+
+
+
+
