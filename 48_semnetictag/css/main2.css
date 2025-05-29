@@ -1,0 +1,120 @@
+@charset "utf-8";
+body{
+    background: #333333;
+}
+.wrap{
+    width: 417px;
+    margin: auto;
+    /* background: gold; */
+}
+.wrap header{
+    width: 100%;
+    height: 50px;
+    background: #666666;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+main{
+    display: flex;
+    gap: 20px;
+}
+.wrap nav{
+    width: 95px;
+    height: 205px;
+    background: #666666;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.wrap aside{
+    width: 95px;
+    height: 205px;
+    background: #666666;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+section{
+    width: 196px;
+    height: 100%;
+    background: #666666;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+section .wrap2{
+    width: 182px;
+    height: 162px;
+    /* background: gold; */
+    margin: auto;
+    margin-bottom: 10px;
+}
+section .hea{
+    width: 182px;
+    height: 32px;
+    background: #999999;
+    margin-bottom:6px ;
+    line-height: 32px;
+    border-radius: 5px;
+}
+section article{
+    width: 182px;
+    height: 86px;
+    background: #999999;
+    margin-bottom: 5px;
+    line-height: 86px;
+    border-radius: 5px;
+}
+section footer{
+    width: 182px;
+    height: 32px;
+    background: #999999;
+    line-height: 32px;
+    border-radius: 5px;
+}
+.wrap .foo{
+    width: 100%;
+    height: 40px;
+    background: #666;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
