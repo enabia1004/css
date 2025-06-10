@@ -1,0 +1,36 @@
+header{
+    width:100%;
+    border-bottom: 1px solid #333;
+}
+header .inner{
+    width: 1673px;
+    height: 74px;
+    /* background: gold; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .inner h1 a img{
+    width: 128px;
+    height: 58px;
+}
+
+header .inner nav ul{
+    display: flex;
+    gap: 50px;
+    padding-left: 950px;
+}
+header .inner nav ul li a{
+    color: #433F3C;
+    font-size: 10px;
+}
+header .inner button{
+    font-size: 13px;
+    color: #433F3C;
+}
+.m_btn{
+    display: none;
+}
