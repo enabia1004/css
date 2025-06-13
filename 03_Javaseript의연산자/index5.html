@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트연산자(증감연산자)</title>
+</head>
+<body>
+    <!-- 
+        ++ 증감연산자 1씩증가 변수명++,++변수명
+        -- 감소연산자 1씩감소 변수명--,--변수명
+    -->
+        <script>
+            // let num = 10;
+            
+            // num+=1;
+            // document.write("num변수값=" + num + "<br>")
+            
+            // num++;
+            // document.write("num변수값=" + num + "<br>")
+            
+            // ++num;
+            // document.write("num변수값=" + num + "<br>")
+            
+            // // 1씩 감소
+            // num-=1;
+            // document.write("num변수값=" + num + "<br>")
+            
+            // num--;
+            // document.write("num변수값=" + num + "<br>")
+            
+            // --num;
+            // document.write("num변수값=" + num + "<br>")
+
+
+            let gog = 99
+            let suha = 99
+            let eng = 99
+            
+            gog+=1;
+            document.write("국어점수=" + gog + "<br>")
+            suha+=1;
+            document.write("수학점수=" + suha + "<br>")
+            eng+=1;
+            document.write("영어점수=" + eng + "<br>")
+            
+            // 총점
+            let ber = gog + suha + eng++;
+            document.write("총점=" + ber + "<br>")
+
+            // 평균
+            let ber2 = gog = suha = eng;
+            ber2-=1;
+            document.write("평균=" + ber2 + "<br>")
+
+
+        </script>
+</body>
+</html>
