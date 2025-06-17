@@ -1,8 +1,10 @@
 $(function(){
-    $(".btn1").click(function(){
-        $(".rook").toggle();
+    $(".family1 button").click(function(){
+        $(".family1 ul").toggle();
+        $(".family2 ul").hide();
     })
-    $(".btn2").click(function(){
-        $(".iook").toggle();
+    $(".family2 button").click(function(){
+        $(".family2 ul").toggle();
+        $(".family1 ul").hide();
     })
 })
