@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{background: none;border: none;cursor: pointer;}
+img{display: block;border: none;}
+
+header{
+    width: 100%;
+    height: 112px;
+    background: #fff;
+}
+header .inner{
+    width: 1140px;
+    height: 112px;
+    /* background: gold; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+header .inner .txt{
+    display: flex;
+    line-height: 112px;
+    gap: 85px;
+}
+header .inner .txt li{
+    font-size: 17px;
+    font-weight: 500;
+}
+header .inner .txt li a{
+    color: #000;
+}
+
+main{
+    width: 100%;
+}
+main .slide{
+    width: 100%;
+}
+main .slide div a{
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+main .slide .visu1 a{
+    background: url("../images/20231214092231893897_01.jpg") no-repeat center top;
+}
+main .slide .visu2 a{
+    background: url("../images/20240425131236979036_02.jpg") no-repeat center top;
+}
+main .slide .visu3 a{
+    background: url("../images/20231214092606468902_03.jpg") no-repeat center top;
+}
+main .slide .visu4 a{
+    background: url("../images/20240116133051904008_04.jpg") no-repeat center top;
+}
+main .slide .visu5 a{
+    background: url("../images/20231214092256522898_05.jpg") no-repeat center top;
+}
+main .slide .visu6 a{
+    background: url("../images/20231214092418147899_06.jpg") no-repeat center top;
+}
+
+main .slide .slick-prev{
+    /* border: 1px solid red; */
+    width: 18px;
+    height: 30px;
+    background: url("../images/btn_left.png") no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -700px;
+    z-index: 10;
+    text-indent: -99999px;
+}
+main .slide .slick-next{
+    /* border: 1px solid red; */
+    width: 18px;
+    height: 30px;
+    background: url("../images/btn_right.png") no-repeat;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: -700px;
+    z-index: 10;
+    text-indent: -99999px;
+}
+
+
+
+
