@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch문</title>
+</head>
+<body>
+    <!-- 
+        switch(값,변수,수식)
+    -->
+
+    <script>
+        // 외부로부터 1-12월 데이터를 입력받아서 영어로 알려주는 프로그램
+        // 결과는 경고창에 출력
+        
+        let eng = "";
+        let month = prompt("영어로 알고싶은 월을 입력해주세요")
+        switch(month){
+            case '1': 
+            eng = "january";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '2': 
+            eng = "faduary";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '3': 
+            eng = "marchy";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '4': 
+            eng = "aprill";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '5': 
+            eng = "may";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '6': 
+            eng = "june";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '7': 
+            eng = "july";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '8': 
+            eng = "august";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '9': 
+            eng = "semtember";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '10': 
+            eng = "october";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '11': 
+            eng = "november";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            case '12': 
+            eng = "december";
+            alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+            break;
+            default: 
+                alert("1-12월 중에 입력해 주세요!!")
+                break;
+        }
+
+        // 결과를 경고창에 출력
+        // alert("입력하신" + month + "월은 영어로" + eng + "입니다")
+    </script>
+</body>
+</html>
