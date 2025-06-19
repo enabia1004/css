@@ -54,6 +54,8 @@ a{text-decoration: none;}
 }
 .main{
     width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .main .swiper img{
     width: 100%;
