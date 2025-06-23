@@ -45,7 +45,7 @@ section .inner .left .txt h3::before{
     background: #fff;
     position: absolute;
     left: -15px;
-    top: 50%;
+    top: 20%;
     transform: translateY((-50%));
 }
 section .inner .left .txt h3:first-child::before{
@@ -99,7 +99,7 @@ section .inner .product .list .slick-dots{
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: -10px;
+    margin-top: 10px;
 }
 section .inner .product .list .slick-dots li button{
     width: 10px;
@@ -117,8 +117,8 @@ section .inner .product .list .slick-dots li.slick-active button{
 .btn_pause{
     position: absolute;
     left: 50%;
-    margin-left: 36px;
-    bottom: 38px;
+    margin-left: 40px;
+    bottom: 18px;
     width: 10px;
     height: 10px;
     background: url("../images/btn_rolling_s_stop.png") no-repeat;
@@ -126,8 +126,9 @@ section .inner .product .list .slick-dots li.slick-active button{
 }
 .btn_play{
     position: absolute;
-    left: 59%;
-    bottom: 38px;
+    left: 50%;
+    margin-left: 60px;
+    bottom: 18px;
     width: 10px;
     height: 10px;
     background: url("../images/btn_rolling_s_play.png") no-repeat;
