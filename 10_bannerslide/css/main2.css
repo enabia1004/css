@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{
+
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+button{border: none;background: none;cursor: pointer;}
+
+section{
+    width: 100%;
+}
+section .inner{
+    width: 1520px;
+    height: 390px;
+    /* background: gold; */
+    margin:50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+section .inner .box{
+    width: 272px;
+    height: 390px;
+    /* background: pink; */
+    position: relative;
+
+}
+section .inner .box .txt{
+    width: 272px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    padding: 20px;
+}
+section .inner .box .txt h4 span{
+    color: #F94755;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
