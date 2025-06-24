@@ -9,30 +9,41 @@
     <script>
         let scudule = {
             mon:{ 
-                time1:"html",
-                time2:"css"
+                "1교시":"html",
+                "2교시":"css"
             },
             tue:{
-                time1:"javascript",
-                time2:"jquery"
+                "1교시":"javascript",
+                "2교시":"jquery"
             },
             wed:{
-                time1:"작품집",
-                time2:"포트폴리오"
+                "1교시":"작품집",
+                "2교시":"포트폴리오"
             }
         }
         document.write("<h3>월요일<h3>")
-            document.write("1교시:" + scudule.mon.time1 + "<br>")
-            document.write("2교시:" + scudule.mon.time2 + "<br>")
+        document.write("1교시:" + scudule.mon.time1 + "<br>")
+        document.write("2교시:" + scudule.mon.time2 + "<br>")
             
         document.write("<h3>화요일<h3>")
-            document.write("1교시:" + scudule["tue"]["time1"] + "<br>")
-            document.write("2교시:" + scudule["tue"]["time2"] + "<br>")
+        document.write("1교시:" + scudule["tue"]["time1"] + "<br>")
+        document.write("2교시:" + scudule["tue"]["time2"] + "<br>")
             
         document.write("<h3>수요일<h3>")
-            document.write("1교시:" + scudule["wed"]["time1"] + "<br>")
-            document.write("2교시:" + scudule["wed"]["time2"] + "<br>")
+        document.write("1교시:" + scudule["wed"]["time1"] + "<br>")
+        document.write("2교시:" + scudule["wed"]["time2"] + "<br>")
+            
+        document.write("<hr>")
+        // 반복문을 출력
 
+        for(let key in scudule){
+            document.write("<h3>" + key + "</h3>");
+            for(let time in scudule[key]){
+                document.write(time + ":" + scudule[key][time] + "<br>")
+            }
+        }
+
+        // 응용문제
     </script>
 </body>
 </html>
