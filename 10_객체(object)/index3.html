@@ -8,33 +8,35 @@
 <body>
     <script>
         // 배열
-        let book = {
+        let book = [
+            "소년이온다",
+            "13,600원",
+            "한강",
+            "2024년12월12일",
+            "216페이지"
+        ]
+            
+        document.write("책제목:" + book[0] + "<br>")
+        document.write("가격:" + book[1] + "<br>")
+        document.write("저자:" + book[2] + "<br>")
+        document.write("출간일:" + book[3] + "<br>")
+        document.write("페이지수:" + book[4] + "<br>")
+        
+        document.write("<hr>")
+
+        let book2 = {
             jamo:"소년이온다",
             gago:"13,600원",
             name:"한강",
             day:"2024년12월12일",
-            page:"216페이지"
-        }
-        let books = {
-            "책제목":"소년이온다",
-            "가격":"13,600원",
-            "저자":"한강",
-            "출간일":"2024년12월12일",
-            "페이지수":"216페이지"
-        }
-    
-        document.write("책제목:" + book.jamo + "<br>")
-        document.write("가격:" + book.gago + "<br>")
-        document.write("저자:" + book.name + "<br>")
-        document.write("출간일:" + book.day + "<br>")
-        document.write("페이지수:" + book.page + "<br>")
-        
-        document.write("<hr>")
+            page:"216페이지",
+        };
 
-        for(let key in books){
-            document.write(key + ":" + books[key] + "<br>")
-        }
-
+        document.write("책제목:" + book2.jamo + "<br>")
+        document.write("가격:" + book2.gago + "<br>")
+        document.write("저자:" + book2.name + "<br>")
+        document.write("출간일:" + book2.day + "<br>")
+        document.write("페이지수:" + book2.page + "<br>")
     </script>
 </body>
 </html>
