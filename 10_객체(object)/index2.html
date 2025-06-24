@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트객체응용</title>
+</head>
+<body>
+    <script>
+        let scudule = {
+            mon:{ 
+                time1:"html",
+                time2:"css"
+            },
+            tue:{
+                time1:"javascript",
+                time2:"jquery"
+            },
+            wed:{
+                time1:"작품집",
+                time2:"포트폴리오"
+            }
+        }
+        document.write("<h3>월요일<h3>")
+            document.write("1교시:" + scudule.mon.time1 + "<br>")
+            document.write("2교시:" + scudule.mon.time2 + "<br>")
+            
+        document.write("<h3>화요일<h3>")
+            document.write("1교시:" + scudule["tue"]["time1"] + "<br>")
+            document.write("2교시:" + scudule["tue"]["time2"] + "<br>")
+            
+        document.write("<h3>수요일<h3>")
+            document.write("1교시:" + scudule["wed"]["time1"] + "<br>")
+            document.write("2교시:" + scudule["wed"]["time2"] + "<br>")
+
+    </script>
+</body>
+</html>
