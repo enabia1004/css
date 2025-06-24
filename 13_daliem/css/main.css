@@ -1,0 +1,109 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+.header_wrap{
+    width: 100%;
+    /* height: 320px; */
+    height: 70px;
+    background: #fff;
+    border-bottom:1px solid #17263B  ;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.header .inner{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+}
+.header .inner h1{
+    float: left;
+    line-height: 70px;
+    margin-right: 68px;
+}
+.header .inner .gnb{
+    float: left;
+}
+
+.header .inner .gnb>li{
+    float: left;
+    margin-right: 63px;
+    line-height: 70px;
+    position: relative;
+}
+.header .inner .gnb>li>a{
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+.header .inner .icon{
+    float: right;
+}
+.header .inner .icon li{
+    float: right;
+    margin-left: 20px;
+    line-height: 70px;
+}
+.header .inner .icon .frist{
+    margin-top: 2px;
+}
+.visual{
+    width: 100%;
+    height: 843px;
+    background: url("../images/darimepoto.jpg");
+}
+.header .gnb>li:hover>a{
+    color:#0385d7;
+}
+
+/* 2단 메뉴 */
+.header .inner .gnb>li>.depth2{
+    width: 140px;
+    /* height: 250px; */
+    height: 70px;
+    position: absolute;
+    left: -20px;
+    top: 70px;
+    border-left: 1px solid #f1f1f1;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    /* border: 1px solid red; */
+    display: none;
+}
+.header .inner .gnb>li>.depth2>li{
+    line-height: 33px;
+}
+.header .inner .gnb>li>.depth2>li>a{
+    font-size: 14px;
+    color: #727272;
+    letter-spacing: -0.8px;
+}
+.header .inner .gnb>li>.depth2>li:hover>a{
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
