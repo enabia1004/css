@@ -8,16 +8,55 @@
 <body>
     <script>
 
-        let left = prompt("좌변의 숫자를 입력하세요");
-        let right = prompt("우변의 숫자를 입력하세요");
+        // let left = prompt("좌변의 숫자를 입력하세요");
+        // let right = prompt("우변의 숫자를 입력하세요");
 
-        function add(num1,num2){
-            return Number(num1) + Number(num2);
+        // function add(num1,num2){
+        //     return Number(num1) + Number(num2);
+        // }
+
+        // document.write(`${left} + ${right} = ${add(left,right)}`)
+
+
+        // 직사각형의 넓이를 구하는 프로그램
+        // 직사각형 넓이 구하는 함수
+        // 가로,세로 사이즈를 외부에서 받기
+        // 가로=00 세로=00 넓이=000
+
+        let width = prompt("가로사이즈를 입력하세요?")
+        let hegiht = prompt("세로사이즈를 입력하세요?")
+
+        //넓이를 계산하는 함수
+        function squre(wd,hg){
+            let res = Number(wd) * Number(hg)
+            return res
         }
 
-        document.write(`${left} + ${right} = ${add(left,right)}`)
+        document.write(`가로=${width} 세로=${hegiht} 넓이=${squre(width,hegiht)}`)
 
-        
+        // 여러개의 데이터를 결과를 받을때
+        // 배열로 두개값 되돌리기
+        function getcolor(){
+            return ["빨강","그린","파랑"]
+        }
+
+        let result = getcolor();
+        document.write(result[0])
+        document.write(result[1])
+        document.write(result[2])
+
+        // 객체로 되돌려 받을때
+        function getuse(){
+            return{
+                name:"홍길동",
+                age:20,
+            }
+        }
+
+        let user = getuse();
+        document.write(user.name)
+        document.write(user.age)
+
     </script>
 </body>
 </html>

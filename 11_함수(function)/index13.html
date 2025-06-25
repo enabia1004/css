@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수응용</title>
+</head>
+<body>
+    <script>
+        function cha(name,weight,height){
+            let lod = Number(weight)/(Number(height)*Number(height)/10000)
+            document.write(`${name}님의 체질량지수는 ${lod}입니다<br>`)
+        }
+
+        cha("홀쭉이",43.52,160);
+        cha("코린이",61.25,175);
+        cha("통통이",77.76,180);
+
+    </script>
+</body>
+</html>
