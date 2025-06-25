@@ -24,25 +24,15 @@
 
         // 함수를 사용
         document.write("<hr>")
-        function wegh1(mer){
-            for(let w=1;w<=5;w++){
-                document.write(`여기는 ${mer}입니다<br>`)
-            }
-        }
-        function wegh2(mer){
-            for(let w=1;w<=4;w++){
-                document.write(`여기는 ${mer}입니다<br>`)
-            }
-        }
-        function wegh3(mer){
-            for(let w=1;w<=3;w++){
+        function wegh1(mer,on){
+            for(let w=1;w<=on;w++){
                 document.write(`여기는 ${mer}입니다<br>`)
             }
         }
 
-        wegh1("서울");
-        wegh2("부산");
-        wegh3("제주");
+        wegh1("서울",5);
+        wegh1("부산",4);
+        wegh1("제주",3);
     </script>
 </body>
 </html>
