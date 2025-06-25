@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return응용</title>
+</head>
+<body>
+    <script>
+
+        let left = prompt("좌변의 숫자를 입력하세요");
+        let right = prompt("우변의 숫자를 입력하세요");
+
+        function add(num1,num2){
+            return Number(num1) + Number(num2);
+        }
+
+        document.write(`${left} + ${right} = ${add(left,right)}`)
+
+        
+    </script>
+</body>
+</html>
