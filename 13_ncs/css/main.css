@@ -19,6 +19,7 @@ button{border: none;background: none;cursor: pointer;}
     left: 0;
     top: 0;
     z-index: 98; 
+    display: none;
 }
 
 
@@ -35,6 +36,7 @@ button{border: none;background: none;cursor: pointer;}
     top: 50%;
     transform: translate(-50%,-50%);
     z-index: 100;
+    display: none;
 }
 .popup h2{
     font-size: 18px;
