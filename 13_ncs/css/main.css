@@ -1,0 +1,366 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","malgin gothic",sans-serif;
+    color: #333;
+    font-size: 14px;
+    background: #fff;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;border: none;}
+button{border: none;background: none;cursor: pointer;}
+
+.cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 98; 
+}
+
+
+/* 팝업창 */
+.popup{
+    width: 400px;
+    height: 400px;
+    background: #FF9800;
+    color: #fff;
+    border: 1px solid #FF9800;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
+.popup h2{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.popup .btn_close{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #fff;
+    border: none;
+    padding: 6px;
+}
+
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header{
+    width: 1200px;
+    height: 100px;
+    /* background: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin:0 auto;
+    position: relative;
+}
+.gnbbg{
+    width: 100%;
+    height: 130px;
+    background: #F44336;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 49;
+    display: none;
+}
+header nav ul.gnb{
+    display: flex;
+    width: 600px;
+    height: 40px;
+    /* background: gold; */
+}
+header nav ul.gnb>li{
+    width: 150px;
+    height: 100%;
+    /* background: aquamarine; */
+    position: relative;
+}
+header nav ul.gnb>li>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+header nav ul.gnb>li:hover>a{
+    background: #F44336;
+    color: #fff;
+}
+/* 2차메뉴(.depth2) */
+header nav ul.gnb>li>.depth2{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    z-index: 50;
+    display: none;
+}
+header nav ul.gnb>li>.depth2 li{
+    width: 100%;
+}
+header nav ul.gnb>li>.depth2 li a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+header nav ul.gnb>li>.depth2 li:hover a{
+    background: #fff;
+    color: #F44336;
+}
+
+
+main{
+    width: 1200px;
+    height: 300px;
+    background: brown;
+    margin:0 auto;
+}
+
+.contents{
+    display: flex;
+    width: 1200px;
+    height: 200px;
+    /* background: cadetblue; */
+    margin:0 auto;
+}
+/* 공지사항(notice) */
+.contents .notice{
+    width: 400px;
+    height: 200px;
+    /* background: chartreuse; */
+    padding: 10px;
+}
+.contents .notice ul{
+    width: 100%;
+    height: 130px;
+    /* background: gold; */
+}
+.contents .notice ul li{
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+.contents .notice ul li a{
+    color: #333;
+}
+
+/* 갤러리(gallery) */
+.contents .gallery{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.contents .gallery h2,
+.contents .notice h2,
+.contents .link h2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #FF9800;
+    font-size: 16px;
+}
+.contents .gallery ul{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contents .gallery ul li a img{
+    transition: all 0.3s ease-in-out;
+}
+.contents .gallery ul li:hover a img{
+    opacity: 0.5;
+}
+/* 바로가기(link) */
+.contents .link{
+    width: 400px;
+    height: 200px;
+    background: url("../images/content.png") no-repeat;
+    padding: 10px;
+}
+.contents .link h2{
+    color: #fff;
+    padding: 0 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+.contents .link p{
+    color:#fff;
+    line-height: 24px;
+    padding: 0 10px;
+    text-shadow: 2px 2px 2px #000;
+}
+.contents .link a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: #000;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+
+/* footer영역 */
+footer{
+    width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    border-top: 1px solid #FF9800;
+}
+footer .fwrap{
+    width: 1000px;
+    height: 100px;
+}
+footer .fwrap .wner{
+    width: 100%;
+    height: 50%;
+}
+footer .fwrap .wner ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+footer .fwrap .wner ul li{
+    position: relative;
+}
+footer .fwrap .wner ul li::after{
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #333;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .fwrap .wner ul li:first-child::after{
+    display: none;
+}
+footer .fwrap .wner ul li a{
+    color: #333;
+    font-size: 12px;
+    font-weight: 700;
+}
+footer .fwrap p{
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+}
+footer .family{
+    width: 200px;
+    height: 100px;
+    padding-top: 20px;
+    position: relative;
+}
+footer .family .fm{
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #333;
+    text-align: left;
+    text-indent: 20px;
+    position: relative;
+}
+footer .family .fm::after{
+    content: '▼';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .family ul{
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+    width: 200px;
+    background: #fff;
+    border: 1px solid #333;
+    text-indent: 20px;
+    display: none;
+    border-bottom: none;
+}
+footer .family ul li{
+    line-height: 24px;
+}
+footer .family ul li a{
+    font-size: 12px;
+    color: #333;
+}
+footer .family ul li:hover{
+    background: #FF9800;
+}
+footer .family ul li:hover a{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
