@@ -20,11 +20,11 @@ $(function(){
         $(".famliy ul").toggle()
     })
 
-    // $(".gnb").mouseenter(function(){
-    //     $(".depth2").show()
-    // })
+    $("nav>ul>li").mouseenter(function(){
+        $(".gnb").show();
+    })
 
-    // $(".gnb").mouseleave(function(){
-    //     $(".depth2").hide()
-    // })
+    $("nav>ul>li").mouseleave(function(){
+        $(".gnb").hide();
+    })
 })
