@@ -124,7 +124,12 @@ section .inner .product .list .slick-dots li.slick-active button{
     background: url("../images/btn_rolling_s_stop.png") no-repeat;
     text-indent: -99999px;
 }
-.btn_play{
+/* 플레이버튼 */
+.btn_pause.on{
+    background: url("../images/btn_rolling_s_play.png") no-repeat;
+}
+
+/* .btn_play{
     position: absolute;
     left: 50%;
     margin-left: 60px;
@@ -133,7 +138,7 @@ section .inner .product .list .slick-dots li.slick-active button{
     height: 10px;
     background: url("../images/btn_rolling_s_play.png") no-repeat;
     text-indent: -99999px;
-}
+} */
 
 
 
