@@ -88,8 +88,13 @@ button{border: none;background: none;cursor: pointer;}
     font-weight: 700;
     color: #868690;
 }
+
 .section .inner .right .wrap .menu li{
     position: relative;
+}
+.section .inner .right .wrap .menu li.on a{
+    color: #000;
+    font-weight: bold;
 }
 .section .inner .right .wrap .menu li::before{
     content: "";
@@ -104,9 +109,9 @@ button{border: none;background: none;cursor: pointer;}
 .section .inner .right .wrap .menu li:last-child:before{
     display: none;
 }
-.section .inner .right .wrap .menu li:first-child a{
+/* .section .inner .right .wrap .menu li:first-child a{
     color: #333;
-}
+} */
 
 .section .inner .right .wrap .more{
     display: block;
