@@ -10,7 +10,7 @@ a{text-decoration: none;}
 section{
     width: 100%;
     padding: 170px 0;
-    border: 5px solid red;
+    /* border: 5px solid red; */
 }
 section .inner{
     width: 1140px;
