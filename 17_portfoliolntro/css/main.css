@@ -47,6 +47,13 @@ body{
     text-decoration: none;
 }
 
+.intro .inner .info .day h3{
+    font-size: 18px;
+}
+.intro .inner .info .day {
+    font-size: 40px;
+    font-weight:900 ;
+}
 
 
 
