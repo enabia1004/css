@@ -178,7 +178,9 @@ button{border: none;background: none;cursor: pointer;}
     transform: translate(-50%,-50%);
 }
 
-
+.section .inner .right .product_wrap .product2{
+    display: none;
+}
 
 
 
