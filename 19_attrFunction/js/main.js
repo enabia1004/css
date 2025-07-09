@@ -13,7 +13,7 @@ $(function(){
         console.log(url)
 
         // url를 big박스에 넣기
-        $(".box big img").attr({'src':url});
+        $(".box .big img").attr({'src':url});
     })
 
 
