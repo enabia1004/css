@@ -1,0 +1,79 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕";
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;border: none;}
+
+h1{
+    text-align: center;
+}
+
+.box{
+    width: 100%;
+}
+.box .gix{
+    width: 100%;
+    padding: 30px 0;
+    border-bottom:1px solid #9A9A9A;
+}
+.box .gix ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.box .gix ul li{
+    border: 5px solid #ccc;
+}
+.box .gix ul li img{
+    display: block;
+    width: 90px;
+    height: 60px;
+}
+
+
+.box .big{
+    width: 440px;
+    height: 290px;
+    border: 7px solid #ccc;
+    margin: auto;
+    margin-top: 30px;
+}
+.box .big img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
