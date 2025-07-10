@@ -8,6 +8,230 @@ button{border: none;background: none;cursor: pointer;}
 a{text-decoration: none;}
 img{border: none;display: block;}
 li{list-style: none;}
+.cover{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    display: none;
+}
+
+
+
+/* 모바일 메뉴 사이드 */
+.m_side_wrap{
+    width: calc(100% - 30px);
+    height: 100%;
+    background: #f6f6f6;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    z-index: 100;
+    overflow-x: auto;
+}
+.m_side_wrap .m_login{
+    width: 100%;
+    height: 340px;
+    background: #009223;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+.m_side_wrap .m_login .m_header{
+    display: flex;
+    justify-content: space-between;
+}
+.m_side_wrap .m_login .m_header h1 a{
+    display: block;
+    width: 88px;
+    height: 18px;
+    background: url("../images/logo_sidemenu.png") no-repeat;
+    background-size: 88px;
+    text-indent: -99999px;
+}
+.m_side_wrap .m_login .m_header ul{
+    display: flex;
+    align-items: center;
+}
+.m_side_wrap .m_login .m_header ul li:first-child a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon_setting.png") no-repeat;
+    background-size: 40px;
+    text-indent: -99999px;
+}
+.m_side_wrap .m_login .m_header ul li:last-child a{
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url("../images/icon_sidemenu_close_02.png") no-repeat;
+    background-size: 27px;
+    text-indent: -99999px;
+}
+.m_side_wrap .m_login p{
+    color: #fff;
+    font-size: 17px;
+    margin-top: 24px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+/* 로그인버튼 */
+.m_side_wrap .m_login .loginbtn{
+    display: flex;
+    gap: 6%;
+}
+.m_side_wrap .m_login .loginbtn li{
+    width: 48%;
+}
+.m_side_wrap .m_login .loginbtn li a{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background: #FFC300;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+.m_side_wrap .m_login .loginbtn li:last-child a{
+    background: #fff;
+    color: #333;
+}
+.m_side_wrap .m_login .compor{
+    width: 100%;
+    background: #62CE08;
+    padding: 16px 0;
+    border-radius:99px ;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* quick메뉴구역 */
+.quicmenu{
+    width: 100%;
+    position: relative;
+}
+.quicmenu ul{
+    width: 90%;
+    background: #fff;
+    border-radius: 25px 0 25px 0;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -45px;
+}
+.quicmenu ul li{
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.quicmenu ul li:first-child,
+.quicmenu ul li:nth-child(2),
+.quicmenu ul li:nth-child(3){
+    margin-bottom: 40px;
+}
+.quicmenu ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quicmenu ul li a img{
+    width: 40px;
+}
+.quicmenu ul li a h4{
+    font-size: 12px;
+    color: #292929;
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* 모바일주메뉴 */
+.m_gnb{
+    position: relative;
+    width: 100%;
+}
+.m_gnb>ul{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translateX(-50%);
+    border-radius: 25px 0 25px 0;
+    overflow: hidden;
+}
+.m_gnb>ul>li{
+    width: 100%;
+    margin-bottom: 2px;
+    border-bottom: 1px solid #F6F6F6;
+    background: #fff;
+}
+.m_gnb>ul>li>a{
+    display: block;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.m_gnb>ul>li>a::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #bbb;
+    border-top: none;
+    border-left: none;
+    right: 70px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    /* background: gold; */
+}
+
+.m_gnb>ul>li>a>img{
+    width: 26px;
+}
+.m_gnb>ul>li>a>h3{
+    font-size: 15px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* 모바일 메뉴 2단 메뉴 */
+.m_gnb>ul>li>.depth2{
+    width: 100%;
+    background: #fcfcfc;
+    padding: 40px 0;
+    display: none;
+}
+.m_gnb>ul>li>.depth2 li{
+    text-indent: 70px;
+}
+.m_gnb>ul>li>.depth2 li a{
+    color: #292929;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+
+
+
+
+
 
 .header{
     width: 100%;
@@ -32,7 +256,7 @@ li{list-style: none;}
     background-size: 120px 24px;
     text-indent: -99999px;
 }
-.header button{
+.header .cart{
     width: 25px;
     height: 25px;
     background: url("../images/icon_cart.png") no-repeat;
@@ -42,6 +266,16 @@ li{list-style: none;}
     right: 20px;
     top: 50%;
     margin-top: -12.5px;
+}
+.header .m_btn{
+    width: 14px;
+    height: 12px;
+    background: url("../images/ico_mTopetc04.png") no-repeat;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-indent: -99999px;
 }
 .login{
     width: 100%;
@@ -136,3 +370,145 @@ li{list-style: none;}
 .order ul.orderlist li:last-child{
     background: #fff url("../images/img_homesub2.png") no-repeat 90% 90%;
 }
+
+
+/* banner박스 */
+
+.banner{
+    width: 100%;
+    padding: 20px;
+    background: #f6f6f6;
+    box-sizing: border-box;
+}
+.banner .title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.banner .title h2{
+    color: #292929;
+    font-size:18px ;
+    font-weight: bold;
+}
+.banner .title a img{
+    width: 10px;
+}
+
+/* banner박스안의 slide박스구역 */
+.slick-slide{
+    padding: 0 10px;
+}
+.banner .bannerslide{
+    padding-bottom: 60px;
+}
+.banner .bannerslide li{
+    width: 50%;
+}
+.banner .bannerslide li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.banner .bannerslide li a .imgbox{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius:10px ;
+}
+.banner .bannerslide li a .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+.banner .bannerslide li a .txt{
+    text-align: center;
+}
+.banner .bannerslide li a .txt h3{
+    color: #000;
+    margin-top: 13px;
+}
+.banner .bannerslide li a .txt p{
+    color: #9C9C9C;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+/* 페이지버튼 변경 */
+.banner .bannerslide .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    display: flex;
+    gap: 8px;
+}
+.banner .bannerslide .slick-dots li button{
+    width: 6px;
+    height: 6px;
+    background: #C5C5C5;
+    text-indent: -99999px;
+    border-radius: 100%;
+}
+.banner .bannerslide .slick-dots li.slick-active button{
+    background: #028B3A;
+}
+
+
+/* 서브카드 구역 */
+.subcard{
+    width: 100%;
+    padding: 20px;
+    background: #f6f6f6;
+    box-sizing: border-box;
+}
+.subcard h2{
+    font-size: 17px;
+    font-weight: bold;
+}
+.subcard ul{
+    display: flex;
+    width: 100%;
+    gap: 35px;
+    margin-top: 15px;
+}
+.subcard ul li{
+    width: 40%;
+    height: 100px;
+    background: #fff;
+    border-radius: 12px;
+}
+.subcard ul li a{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.subcard ul li a .imgbox{
+    width: 60px;
+    height: 40px;
+}
+.subcard ul li a .imgbox img{
+    width: 100%;
+    height: 100%;
+}
+.subcard ul li a h3{
+    font-size: 13px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
