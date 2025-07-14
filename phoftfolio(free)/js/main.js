@@ -4,7 +4,6 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     navigation: false,
     navigationPosition: 'right',
-    anchors:['section0', 'section1','section2','section3','section4','section5'],
 });
 let header = document.querySelector("header")
 console.log(header)
