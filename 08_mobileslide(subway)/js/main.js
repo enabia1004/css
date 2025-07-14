@@ -41,6 +41,8 @@ $('.bannerslide').slick({
 
   // 모바일 메뉴m_gnb li a를 클릭하면
   $(".m_gnb>ul>li>a").click(function(){
+    $(".m_gnb>ul>li>a").removeClass("on")
+    $(this).toggleClass("on")
     $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
   })
 
@@ -55,4 +57,18 @@ $('.bannerslide').slick({
     $(".m_side_wrap").animate({"left":'-100%'},300)
     $(".cover").fadeOut()
   })
+
+  // 왼쪽아이콘 중에 li를 클릭하면 on클래스 추가
+  $("ul.left_icon li").click(function(){
+    $("ul.left_icon li").removeClass('on')
+    $("ul.right_icon li").removeClass('on')
+    $(this).addClass("on")
+  })
+  $("ul.right_icon li").click(function(){
+    $("ul.right_icon li").removeClass('on')
+    $("ul.left_icon li").removeClass('on')
+    $(this).addClass("on")
+  })
+  // 오늘쪽아이콘에 li를 클릭하면 on클래스 추가
+
 })
