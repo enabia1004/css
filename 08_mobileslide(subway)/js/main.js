@@ -64,11 +64,69 @@ $('.bannerslide').slick({
     $("ul.right_icon li").removeClass('on')
     $(this).addClass("on")
   })
+  
+  // 오늘쪽아이콘에 li를 클릭하면 on클래스 추가
   $("ul.right_icon li").click(function(){
     $("ul.right_icon li").removeClass('on')
     $("ul.left_icon li").removeClass('on')
     $(this).addClass("on")
   })
-  // 오늘쪽아이콘에 li를 클릭하면 on클래스 추가
 
+  // 쿠키정보를 확인해서 쿠키정보가 있다 숨김
+  // 쿠키정보에 아무런 data가 저장되어 있지 안음 보여줌
+  if(GetCookie('subway')=='today'){
+    $('.popup').hide()
+  }else{
+    $('.popup').show()
+  }
+
+
+
+  //팝업창 스크립트
+  $("#today_close,.popup .close label").click(function(){
+    // setCookie함수를 호출
+    if($("#today_close").is(':checked')){
+      // 쿠키정보를 생성한후 팝업창은 숨기기
+      GetCookie('subway','today',1);
+      $(".popup").hide()
+    }else{
+      $('.popup').hide()
+    }
+  })
+
+  // 닫기 버튼을 클릭하면 팝업창 숨기기
+  $('.popup,.close .txt_btn').click(function(){
+    $('.popup').hide()
+  })
+
+
+
+  // GetCookie
+  // Cookie정보
+  // 쿠키 -> 서버웹사이트가 사용자의 브라우저에 저장하는 작은 정보
+  function GetCookie(name){
+				var value=null, search=name+"=";
+				if(document.cookie.length > 0){
+					var offset=document.cookie.indexOf(search);
+					if(offset != -1){
+						offset+=search.length;
+						var end=document.cookie.indexOf(";", offset);
+						if(end == -1) end=document.cookie.length;
+						value=unescape(document.cookie.substring(offset, end));
+					}
+				} return value;
+			}
+			// SetCookie
+      // 쿠키 정보를 만듬
+			function setCookie(name, value, expiredays){
+				var days=10;
+				if(days){
+					var date=new Date(); 
+					date.setTime(date.getTime()+(days*24*60*60*1000));
+					var expires="; expires="+date.toGMTString();
+				}else{
+					var expires=""; 
+				}
+				document.cookie=name+"="+value+expires+"; path=/";
+			}
 })
