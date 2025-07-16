@@ -34,9 +34,6 @@
     .m_menu_wrap h2 a img{
         width: 100px;
     }
-    .m_menu_wrap .m_gnb{
-        
-    }
     .m_menu_wrap .m_gnb>li{
         width: 100%;
         border-bottom: 1px solid #ccc;
@@ -135,7 +132,6 @@
     main .visual img{
         width: 100%;
     }
-
     main .txt p .show{
         display: block;
     }
@@ -173,8 +169,8 @@ main .txt p{
     color: #626262;
     font-weight: 500;
 }
-main .txt p .hidden{
-    display: none;
+main .txt p em{
+    /* display: none; */
 }
 
 /* content영역 */

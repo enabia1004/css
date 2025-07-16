@@ -159,22 +159,20 @@ main .txt h2{
     font-size: 20px;
 }
 main .txt p{
+    display: block;
     font-size: 16px;
     color: #666;
     line-height: 26px;
     text-transform: uppercase;
+    background: #fff;
 }
 main .txt p span{
     font-weight: 700;
 }
-
-
 main .txt p em{
     font-style: normal;
 }
-main .txt p .show{
-    display: none;
-} 
+
 
 /* main의 content영역 */
 main .content{
