@@ -234,6 +234,10 @@ main .snslive ul.snslist li a img{
     height: 100%;
 }
 
+main .m_list{
+    display: none;
+}
+
 /* css hover */
 main .snslive ul.snslist li.blog::before{
     content: '';
@@ -362,7 +366,9 @@ footer .inner .family_box .list li a{
     
 }
 
-
+.m_menu_wrap{
+    display: none;
+}
 
 
 /* copywrite */
