@@ -1,11 +1,11 @@
 $(function(){
     $(".gnb>li").mouseenter(function(){
         $(this).find(".depth2").stop().fadeIn(300)
-    })
+    });
 
     $(".gnb>li").mouseleave(function(){
         $(this).find(".depth2").stop().fadeOut(300)
-    })
+    });
 
     const swiper = new Swiper('.swiper', {
   // Optional parameters
@@ -32,3 +32,69 @@ $(function(){
     },
 });
 })
+
+$(function(){
+  $(".content ul.list li").mouseenter(function(){
+    let num = $(this).find("img").attr('src')
+    console.log(num)
+    // 치환
+    let num2 = num.replace('_ot','_ov')
+    console.log(num2)
+    $(this).find('img').attr('src',num2)
+  })
+
+  $(".content ul.list li").mouseleave(function(){
+    let num = $(this).find("img").attr('src')
+    console.log(num)
+    // 치환
+    let num2 = num.replace('_ov','_ot')
+    console.log(num2)
+    $(this).find('img').attr('src',num2)
+  })
+})
+
+$(function(){
+  $(".btn_family").click(function(){
+    $(".family_box .list").slideToggle()
+    $(this).toggleClass("on")
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

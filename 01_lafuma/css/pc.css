@@ -12,6 +12,7 @@ header .inner{
     /* display: flex;
     justify-content: space-between;
     align-items: center; */
+    z-index: 100;
 }
 
 /* 로고 */
@@ -84,7 +85,7 @@ header .inner ul.gnb>li>.depth2{
     padding: 28px 0;
     box-sizing: border-box;
     z-index: 100;
-    /* display: none; */
+    display: none;
 }
 header .inner ul.gnb>li>.depth2>li{
     line-height: 24px;
@@ -175,16 +176,200 @@ main .txt p .show{
     display: none;
 } 
 
+/* main의 content영역 */
+main .content{
+    background: gold;
+    border-top: 10px solid #f57421;
+}
+main .content ul.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .content ul.list li{
+    width: 50%;
+}
+main .content ul.list li a{
+    display: block;
+    width: 100%;
+}
+main .content ul.list li a img{
+    width: 100%;
+    height: 100%;
+}
+main .content ul.list li:nth-child(3),
+main .content ul.list li:nth-child(4),
+main .content ul.list li:nth-child(5){
+    width: calc(100%/3);
+}
+
+/* snslive박스 영역 */
+main .snslive{
+    padding: 50px;
+    background: #ECECEC;
+}
+main .snslive h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #333;
+}
+main .snslive h2 span{
+    color: #f57421;
+}
+main .snslive ul.snslist{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .snslive ul.snslist li{
+    width: calc(100%/4);
+    position: relative;
+}
+main .snslive ul.snslist li a{
+    display: block;
+    width: 100%;
+}
+main .snslive ul.snslist li a img{
+    width: 100%;
+    height: 100%;
+}
+
+/* css hover */
+main .snslive ul.snslist li.blog::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: url("../images/cover_blog.png") no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+main .snslive ul.snslist li.facebook::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background: url("../images/cover_facebook.png") no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+}
+main .snslive ul.snslist li.blog:hover::before{
+    width: 100%;
+}
+main .snslive ul.snslist li.facebook:hover::before{
+    width: 100%;
+}
+
+/* footer영역 */
+footer{
+    width: 100%;
+    padding:30px;
+    box-sizing: border-box;
+}
+footer .inner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+footer .inner .fmenu{
+    display: flex;
+    gap: 15px;
+}
+footer .inner .fmenu>li{
+    position: relative;
+}
+footer .inner .fmenu>li::after{
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #A9A9A9;
+    border-radius: 100%;
+    position: absolute;
+    right: -10px;
+    top: 55%;
+    transform: translateY(-50%);
+}
+footer .inner .fmenu>li:last-child::after{
+    display: none;
+}
+footer .inner .fmenu>li:hover a{
+    color: #333;
+}
+footer .inner .fmenu>li>a{
+    font-size: 13px;
+    color: #67676F;
+}
+/* 패밀리 박스 */
+footer .inner .family_box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+footer .inner .family_box .site{
+    position: relative;
+}
+footer .inner .family_box .site::before{
+    content: '';
+    width: 20px;
+    height: 15px;
+    background: url("../images/france.jpg") no-repeat;
+    position: absolute;
+    left: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+footer .inner .family_box .btn_family{
+    width: 155px;
+    height: 28px;
+    border: 1px solid #333;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 12px;
+    background: url("../images/btn_select.png") no-repeat 99% center;
+    background-position-y:-1px;
+}
+/* on class 화살표방향변경 */
+footer .inner .family_box .btn_family.on{
+    background-position-y: -24px;
+}
+
+
+footer .inner .family_box .list{
+    position: absolute;
+    right: 0;
+    bottom: 28px;
+    width: 155px;
+    border: 1px solid #333;
+    border-bottom: none;
+    background: #fff;
+    display: none;
+}
+footer .inner .family_box .list li{
+    text-indent: 10px;
+    line-height: 36px;
+}
+footer .inner .family_box .list li:hover{
+    background: #bfbfbf;
+}
+footer .inner .family_box .list li a{
+    font-size: 12px;
+    color: #6D6E69;
+    
+}
 
 
 
 
-
-
-
-
-
-
+/* copywrite */
+footer p{
+    font-size: 12px;
+    color: #b3b3b3;
+}
 
 
 
