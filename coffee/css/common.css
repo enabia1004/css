@@ -151,6 +151,16 @@ footer .inner .info_wrap .ft_menu li a{
     font-size: 14px;
     color: #fff;
 }
+
+/* footer의 way영역 */
+footer .inner .info_wrap .ft_menu .way a{
+    padding: 8px 15px;
+    background: #2F2F2F;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 99px;
+}
+
+
 footer .inner .info_wrap address{
     font-size: 12px;
     color: #A8A6A7;
