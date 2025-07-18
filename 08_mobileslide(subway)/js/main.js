@@ -44,6 +44,9 @@ $('.bannerslide').slick({
     $(".m_gnb>ul>li>a").removeClass("on")
     $(this).toggleClass("on")
     $(this).next().slideToggle().parent().siblings().find(".depth2").slideUp();
+
+    $(this).parent().siblings().find("a.on").removeClass('on');
+    $(this).toggleClass("on")
   })
 
   // 햄버거 버튼을 클릭하면 m_side_wrap을 left -100% 에서 left 0
@@ -87,7 +90,7 @@ $('.bannerslide').slick({
     // setCookie함수를 호출
     if($("#today_close").is(':checked')){
       // 쿠키정보를 생성한후 팝업창은 숨기기
-      GetCookie('subway','today',1);
+      setCookie('subway','today',1);
       $(".popup").hide()
     }else{
       $('.popup').hide()
@@ -130,3 +133,22 @@ $('.bannerslide').slick({
 				document.cookie=name+"="+value+expires+"; path=/";
 			}
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

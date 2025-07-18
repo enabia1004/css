@@ -1,0 +1,139 @@
+@charset "utf-8";
+.wrap{
+    width: 100%;
+    height: 250px;
+    border-bottom: 10px solid #F6F6F6;
+}
+.login{
+    width: 100%;
+    background: #fff;
+}
+.login h2{
+    text-align: center;
+    font-weight: 500;
+}
+.login .btn{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    margin-top: 24px;
+}
+.login .btn a{
+    display: block;
+    width: 106px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 99px;
+    background: #eee;
+    color: #000;
+}
+.login .btn a:hover{
+    color: #fff;
+    background: #00913A;
+}
+.login .ttt{
+    display: block;
+    text-align: center;
+    margin-top: 27px;
+    color: #000;
+}
+
+
+.tabbar{
+    width: 100%;
+    /* background: gold; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.tabbar .tabmenu{
+    width: 100%;
+    height: 65px;
+    background: url("../images/navi_bg.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.tabbar .tabmenu .left_icon,
+.tabbar .tabmenu .right_icon{
+    /* width: 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabbar .tabmenu .left_icon li,
+.tabbar .tabmenu .right_icon li{
+    width: 18vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tabbar .tabmenu .left_icon li a,
+.tabbar .tabmenu .right_icon li a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.tabbar .tabmenu .left_icon li a span,
+.tabbar .tabmenu .right_icon li a span{
+    font-size: 12px;
+    color: #A6A5A3;
+}
+.tabbar .tabmenu .left_icon li a svg path,
+.tabbar .tabmenu .right_icon li a svg path{
+    fill: #A6A5A3;
+    stroke: #A6A5A3;
+}
+.tabbar .tabmenu .left_icon li.on a svg path,
+.tabbar .tabmenu .right_icon li.on a svg path{
+    stroke: #009223;
+    fill: #009223;
+}
+.tabbar .tabmenu .left_icon li.on a span,
+.tabbar .tabmenu .right_icon li.on a span{
+    color: #009223;
+}
+
+
+.tabbar .btn_order{
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    border-radius: 99px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.tabbar .btn_order img{
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
