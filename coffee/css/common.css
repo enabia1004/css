@@ -19,6 +19,87 @@ body{
     z-index: 101;
 }
 
+/* 고정이미지 */
+main .bennerimg{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 100;
+}
+main .form_wrap{
+    position: fixed;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 100;
+}
+main form{
+    width: 100%;
+    padding: 15px 10px;
+    background: #9463B4;
+    text-align: center;
+}
+main form h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+main form h3{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+main form input[type="text"],
+main form textarea{
+    width: 100%;
+    height: 45px;
+    text-indent: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+main form textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 90px;
+}
+main form .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+main form .info h4{
+    font-size: 15px;
+    color: #fff;
+}
+main form p{
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+/* 보내기 버튼 */
+main form #btn_send{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: #56257E;
+}
+main .top{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    list-style: 30px;
+    cursor: pointer;
+}
+
+
 /* header영역 */
 header{
     width: 100%;

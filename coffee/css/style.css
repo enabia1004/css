@@ -37,6 +37,95 @@ body{
 main{
     width: 100%;
 }
+
+/* 고정이미지 */
+main .bennerimg{
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 100;
+}
+main .form_wrap{
+    position: fixed;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 200px;
+    z-index: 100;
+}
+main form{
+    width: 100%;
+    padding: 15px 10px;
+    background: #9463B4;
+    text-align: center;
+}
+main form h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+main form h3{
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+main form input[type="text"],
+main form textarea{
+    width: 100%;
+    height: 45px;
+    text-indent: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+main form textarea{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 90px;
+}
+main form .info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+main form .info h4{
+    font-size: 15px;
+    color: #fff;
+}
+main form p{
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+/* 보내기 버튼 */
+main form #btn_send{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background: #56257E;
+}
+
+
+
+
+main .top{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    list-style: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
 main .slide{
     width: 100%;
     height: 620px;
@@ -113,25 +202,308 @@ main .slide .slick-dots .slick-active button{
     background: url("../images/main_visual_pager_on.png") no-repeat;
 }
 
+/*main안의 section박스 */
+main #section1{
+    width: 100%;
+    padding-top: 60px;
+}
+main #section1 .inner{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+main #section1 .inner .mall,
+main #section1 .inner .find{
+    width: 270px;
+    height: 416px;
+    text-align: center;
+}
+main #section1 .inner .mall h2,
+main #section1 .inner .find h2{
+    font-size: 30px;
+    color: #333;
+}
+main #section1 .inner .mall p,
+main #section1 .inner .find p{
+    font-size: 14px;
+    color: #6D6A65;
+    margin: 20px 0;
+}
+img{display: inline-block;}
 
 
+/* section2영역 */
+main #section2{
+    width: 100%;
+    background: #F5F1E8;
+    padding: 50px 0 94px;
+}
+main #section2 .inner{
+    width: 1000px;
+    margin: auto;
+}
+main #section2 .inner h2{
+    font-size: 30px;
+    color: #4A4A4C;
+    font-weight: bold;
+    text-align: center;
+    background: url("../images/main_menu_title_line.png") no-repeat 0 center;
+    margin-bottom: 55px;
+}
+main #section2 .inner h2 span{
+    font-weight: lighter;
+}
+main #section2 .inner .product_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+main #section2 .inner .product_wrap .new{
+
+}
+main #section2 .inner .product_wrap .best ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 420px;
+}
+main #section2 .inner .product_wrap .best ul li{
+    width: 205px;
+    height: 242px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+}
+main #section2 .inner .product_wrap .best ul li::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+main #section2 .inner .product_wrap .best ul li:hover::after{
+    border: 5px solid #FEB20F;
+}
+
+main #section2 .inner .product_wrap .best ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+main #section2 .inner .product_wrap .best ul li a .productimg{
+    width: 173px;
+}
+main #section2 .inner .product_wrap .best ul li a h3{
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+}
+main #section2 .inner .product_wrap .best ul li a p{
+    font-size: 13px;
+    color: #919499;
+}
+
+main #section2 .inner .product_wrap .best ul li a .label{
+    width: 35px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+/* section3영역 */
+main #section3{
+    width: 100%;
+    background: #413332;
+    padding: 54px 0;
+    box-sizing: border-box;
+}
+main #section3 .inner{
+    width: 1000px;
+    margin:0 auto;
+    position: relative;
+}
+main #section3 .inner .txt h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+}
+main #section3 .inner .txt h2 span{
+    font-weight: 800;
+}
+main #section3 .inner .txt p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 15px 0;
+}
+main #section3 .inner .txt .more{
+    padding: 10px;
+    font-size: 12px;
+    background:#1B1B19;
+    color: #fff;
+}
+main #section3 .inner .banner{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
+
+/* section4영역 */
+main #section4{
+    width: 100%;
+    padding: 80px 0;
+}
+main #section4 .inner{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+/* 배너슬라이드 */
+main #section4 .inner .bannerslide{
+    width: 250px;
+    height: 410px;
+}
+main #section4 .inner .bannerslide .slick-dots{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+    gap: 5px;
+}
+main #section4 .inner .bannerslide .slick-dots li button{
+    width: 15px;
+    height: 15px;
+    border-radius: 99px;
+    text-indent: -99999px;
+    background: #8E8B92;
+}
+main #section4 .inner .bannerslide .slick-dots li.slick-active button{
+    background:#9165B4;
+}
 
 
+/* boxwrap부분 */
+main #section4 .inner .boxwrap{
+    width: 270px;
+    height: 410px;
+}
+main #section4 .inner .boxwrap div{
+    width: 100%;
+    height: 50%;
+    padding: 40px 30px;
+}
+main #section4 .inner .boxwrap div h2{
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+main #section4 .inner .boxwrap div p{
+    font-size: 13px;
+    line-height: 18px;
+}
+main #section4 .inner .socail{
+    background: #6C5648 url("../images/btn_main_article_type1.png") no-repeat 217px 28px;
+}
+main #section4 .inner .socail h2{
+    color: #fff;
+}
+main #section4 .inner .socail p{
+    color: #C6C7CB;
+}
+main #section4 .inner .recruit{
+    background: #F7F7F7 url("../images/btn_main_article_type2.png") no-repeat 217px 28px;
+}
+main #section4 .inner .recruit h2{
+    color: #333;
+}
+main #section4 .inner .recruit p{
+    color: #7A7478;
+}
 
 
+/* banner부분 */
+main #section4 .inner .banner{
+    width: 479px;
+    height: 409px;
+    position: relative;
+}
+main #section4 .inner .banner .franchise{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    height: 205px;
+    background: #424242 url("../images/btn_main_article_type2.png") no-repeat 195px 28px;
+}
+main #section4 .inner .banner .franchise a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    color: #fff;
+}
+main #section4 .inner .banner .franchise a h2{
+    font-size: 25px;
+    margin-bottom: 27px;
+}
+main #section4 .inner .banner .franchise a p{
+    font-size: 12px;
+    text-align: justify;
+    line-height: 20px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* section5 */
+main #section5{
+    width: 100%;
+    padding: 60px;
+    background: #F1F1F1;
+}
+main #section5 .inner{
+    width: 1000px;
+    margin:0 auto;
+}
+main #section5 .inner .tab{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    border-bottom: 2px solid #545454;
+    box-sizing: border-box;
+    gap: 2px;
+}
+main #section5 .inner .tab li{
+    width: 240px;
+}
+main #section5 .inner .tab li:nth-child(2),
+main #section5 .inner .tab li:nth-child(3),
+main #section5 .inner .tab li:nth-child(4){
+    margin-left: -4px;
+}
+main #section5 .inner .tab li a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #666;
+    border: 2px solid #E2E2E2;
+    border-bottom: none;
+}
+main #section5 .inner .tab li.on a{
+    border: 2px solid #545454;
+    /* 제자리에서 공중에 띄워서 배치하기 */
+    position: relative;
+    border-bottom: none;
+    height: 54px;
+    background: #f1f1f1;
+    font-weight: bold;
+}
 
 
 
