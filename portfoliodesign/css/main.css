@@ -1,0 +1,378 @@
+@charset "utf-8";
+body{
+    font-family: "맑은 고딕","margin gothic",sans-serif;
+}
+*{margin: 0;padding: 0;box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;}
+
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #1B1A28;
+    padding: 0 50px;
+}
+header .test{
+    display: flex;
+    justify-content: flex-end;
+    line-height: 100px;
+    gap: 70px;
+}
+header .test li a{
+    font-size: 30px;
+    font-weight: 700;
+    color: #908CB8;
+}
+
+
+/* main 구역 */
+.main{
+    width: 100%;
+    height: 100vh;
+    background: #1B1A28;
+}
+.main .txt{
+    padding-left:150px ;
+    padding-top: 60px;
+}
+.main .txt h1{
+    font-size: 200px;
+    color: #0059FF;
+}
+.main .txt h3{
+    font-size: 100px;
+    padding-left: 800px;
+    color: #908CB8;
+}
+.main .line{
+    padding-top: 300px;
+    padding-left: none;
+    margin: auto;
+}
+
+
+/* about 구역 */
+.about{
+    width: 100%;
+    height: 100vh;
+    background: #1B1A28;
+}
+.about .aboutwrap{
+    display: flex;
+    padding:0 240px;
+    gap: 40px;
+}
+.about .aboutwrap .proflie1{
+    /* width: 400px; */
+}
+.about .aboutwrap .proflie1 .imgbox{
+    background: url("../images/Frame\ 1.png") no-repeat;
+    width: 400px;
+    height: 400px;
+}
+.about .aboutwrap .proflie1 .expertxt{
+    padding: 20px 0;
+}
+.about .aboutwrap .proflie1 .expertxt h3,
+.about .aboutwrap .proflie2 .proflie h3,
+.about .aboutwrap .proflie2 .skill h3{
+    font-size: 45px;
+    color: #908CB8;
+}
+.about .aboutwrap .proflie1 .expertxt p,
+.about .aboutwrap .proflie2 .proflie p{
+    margin-top: 10px;
+    color: #908CB8;
+}
+.about .aboutwrap .proflie2 .proflie p{
+    margin-left: 20px;
+}
+.about .aboutwrap .skill{
+    margin-top: 20px;
+}
+.about .aboutwrap .skill .skillbox{
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.about .aboutwrap .skill .skillbox .iconbox{
+    width: 100px;
+    height: 100px;
+    background: #908CB8;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .aboutwrap .proflie2{
+    position: relative;
+}
+.about .aboutwrap .proflie2 .line{
+    position: absolute;
+    width: 3px;
+    height: 100px;
+    background: #908CB8;
+    left: 0;
+    top: 12%;
+}
+
+
+#join,#joineg{
+    width: 100%;
+    height: 200vh;
+    background: #1B1A28;
+    overflow: hidden;
+    display: flex;
+    padding-left: 60px;
+}
+#join .txtbox,#joineg .txtbox{
+    font-size: 80px;
+    line-height: 1.2;
+}
+#join .txtbox .mask span,
+#joineg .txtbox .mask span{
+    color: #908CB8;
+    /* 배경크립을 텍스트로 제한하여 글자 마스크처리해주는 명령 */
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#fff,#fff);
+    background-size: 0% 100%;
+}
+
+
+
+/* work 구역 */
+.work{
+    width: 100%;
+    height: 120vh;
+    background: #1B1A28;
+}
+.work .works{
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    width: 1500px;
+    margin: 30px auto;
+}
+.work h1{
+    padding-left: 200px;
+    font-size: 100px;
+    color: #0059FF;
+}
+.work .works li{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 250px;
+}
+.work .works li::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+}
+.work .works li:hover::after{
+    opacity: 1;
+}
+.work .works li a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.work .works li a img{
+    box-sizing:border-box;
+    width: 100%;
+    height: 100%;
+}
+.work .works li a .txt{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+}
+.work .works li a .txt h3{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* mywork 구역 */
+.mywork{
+    width: 100%;
+    height: 100vh;
+    background: #1B1A28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mywork h1{
+    font-size: 100px;
+    color: #0059FF;
+}
+
+
+/* contact 구역 */
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: #FAF8FF;
+}
+.contact .conwrap{
+    display: flex;
+    padding: 50px 100px;
+    gap: 50px;
+}
+.contact .conwrap .imgbox{
+    width: 1000px;
+    height: 700px;
+    background: gray;
+}
+.contact .conwrap .txtbox{
+    color: #1B1A28;
+}
+.contact .conwrap .txtbox h2{
+    font-size: 100px;
+    margin-bottom: 50px;
+}
+.contact .conwrap .txtbox .px{
+    margin-top: 200px;
+}
+.contact .conwrap .txtbox .px p{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background: #1B1A28;
+    overflow: hidden;
+}
+.section .wrap{
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50px 50px 0 0; */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+.section .wrap .contents{
+    width: 100%;
+    height: 100%;
+}
+.section .wrap .contents .imgbox{
+    width: 50%;
+    height: 780px;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.section .wrap .contents .imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section .wrap .contents .detail{
+    width: 25%;
+    position: absolute;
+    right: -20px;
+    top: 20%;
+    transform: translate(-20%);
+}
+.section .wrap .contents .detail h2{
+    font-size: 70px;
+    color: #FAF8FF;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.section .wrap .contents .detail h3{
+    font-size: 24px;
+    color: #FAF8FF;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 100px;
+}
+.section .wrap .contents .detail .infotxt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section .wrap .contents .detail .infotxt li{
+    display: flex;
+    gap: 16px;
+    color: #FAF8FF;
+    font-size: 15px;
+}
+.section .wrap .contents .detail .infotxt li .line{
+    width: 1px;
+    height: 15px;
+    background: #FAF8FF;
+}
+.section.right .wrap .contents .detail{
+    left: 300px;
+    position: relative;
+}
+.section.right .wrap .contents .imgbox{
+    left: unset;
+    right: 100px;
+}
+.section.right .wrap .contents .detail a{
+    width: 160px;
+    left: 0;
+}
+
+
+/* contact구역 */
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: #1B1A28;
+    overflow: hidden;
+}
+.contact h1{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
