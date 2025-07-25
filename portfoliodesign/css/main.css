@@ -13,6 +13,8 @@ header{
     height: 100px;
     background: #1B1A28;
     padding: 0 50px;
+    position: fixed;
+    z-index: 50;
 }
 header .test{
     display: flex;
@@ -28,25 +30,25 @@ header .test li a{
 
 
 /* main 구역 */
-.main{
+#main{
     width: 100%;
     height: 100vh;
     background: #1B1A28;
 }
-.main .txt{
+#main .txt{
     padding-left:150px ;
     padding-top: 60px;
 }
-.main .txt h1{
+#main .txt h1{
     font-size: 200px;
     color: #0059FF;
 }
-.main .txt h3{
+#main .txt h3{
     font-size: 100px;
     padding-left: 800px;
     color: #908CB8;
 }
-.main .line{
+#main .line{
     padding-top: 300px;
     padding-left: none;
     margin: auto;
@@ -54,51 +56,51 @@ header .test li a{
 
 
 /* about 구역 */
-.about{
+#about{
     width: 100%;
     height: 100vh;
     background: #1B1A28;
 }
-.about .aboutwrap{
+#about .aboutwrap{
     display: flex;
     padding:0 240px;
     gap: 40px;
 }
-.about .aboutwrap .proflie1{
+#about .aboutwrap .proflie1{
     /* width: 400px; */
 }
-.about .aboutwrap .proflie1 .imgbox{
+#about .aboutwrap .proflie1 .imgbox{
     background: url("../images/Frame\ 1.png") no-repeat;
     width: 400px;
     height: 400px;
 }
-.about .aboutwrap .proflie1 .expertxt{
+#about .aboutwrap .proflie1 .expertxt{
     padding: 20px 0;
 }
-.about .aboutwrap .proflie1 .expertxt h3,
-.about .aboutwrap .proflie2 .proflie h3,
-.about .aboutwrap .proflie2 .skill h3{
+#about .aboutwrap .proflie1 .expertxt h3,
+#about .aboutwrap .proflie2 .proflie h3,
+#about .aboutwrap .proflie2 .skill h3{
     font-size: 45px;
     color: #908CB8;
 }
-.about .aboutwrap .proflie1 .expertxt p,
-.about .aboutwrap .proflie2 .proflie p{
+#about .aboutwrap .proflie1 .expertxt p,
+#about .aboutwrap .proflie2 .proflie p{
     margin-top: 10px;
     color: #908CB8;
 }
-.about .aboutwrap .proflie2 .proflie p{
+#about .aboutwrap .proflie2 .proflie p{
     margin-left: 20px;
 }
-.about .aboutwrap .skill{
+#about .aboutwrap .skill{
     margin-top: 20px;
 }
-.about .aboutwrap .skill .skillbox{
+#about .aboutwrap .skill .skillbox{
     margin-top: 20px;
     padding: 20px;
     display: flex;
     gap: 20px;
 }
-.about .aboutwrap .skill .skillbox .iconbox{
+#about .aboutwrap .skill .skillbox .iconbox{
     width: 100px;
     height: 100px;
     background: #908CB8;
@@ -107,10 +109,10 @@ header .test li a{
     justify-content: center;
     align-items: center;
 }
-.about .aboutwrap .proflie2{
+#about .aboutwrap .proflie2{
     position: relative;
 }
-.about .aboutwrap .proflie2 .line{
+#about .aboutwrap .proflie2 .line{
     position: absolute;
     width: 3px;
     height: 100px;
@@ -145,12 +147,12 @@ header .test li a{
 
 
 /* work 구역 */
-.work{
+#work{
     width: 100%;
     height: 120vh;
     background: #1B1A28;
 }
-.work .works{
+#work .works{
     display: grid;
     display: flex;
     flex-wrap: wrap;
@@ -159,18 +161,18 @@ header .test li a{
     width: 1500px;
     margin: 30px auto;
 }
-.work h1{
+#work h1{
     padding-left: 200px;
     font-size: 100px;
     color: #0059FF;
 }
-.work .works li{
+#work .works li{
     position: relative;
     background: #fff;
     width: 350px;
     height: 250px;
 }
-.work .works li::after{
+#work .works li::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -182,27 +184,27 @@ header .test li a{
     cursor: pointer;
     opacity: 0;
 }
-.work .works li:hover::after{
+#work .works li:hover::after{
     opacity: 1;
 }
-.work .works li a{
+#work .works li a{
     position: relative;
     width: 100%;
     height: 100%;
 }
-.work .works li a img{
+#work .works li a img{
     box-sizing:border-box;
     width: 100%;
     height: 100%;
 }
-.work .works li a .txt{
+#work .works li a .txt{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 20;
+    z-index: 30;
 }
-.work .works li a .txt h3{
+#work .works li a .txt h3{
     font-size: 30px;
     text-align: center;
     color: #fff;
@@ -216,12 +218,12 @@ header .test li a{
     height: 100vh;
     background: #1B1A28;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 .mywork h1{
     font-size: 100px;
     color: #0059FF;
+    margin-left: 27%;
 }
 
 
@@ -339,18 +341,36 @@ header .test li a{
 
 
 /* contact구역 */
-.contact{
+#contact{
     width: 100%;
     height: 100vh;
     background: #1B1A28;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
-.contact h1{
-    color: #fff;
+#contact .txtbox h1{
+    color: #FAF8FF;
 }
-
-
-
+#contact .lock{
+    margin-left: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#contact .lock li{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 30px 25px;
+    border-radius: 99px;
+    background: #1B1A28;
+    color: #FAF8FF;
+    border: 3px solid #0059FF;
+}
+#contact .lock li:hover{
+    background: #FAF8FF;
+    color: #1B1A28;
+    border: 3px solid #FAF8FF;
+}
 
 
 

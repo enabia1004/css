@@ -13,14 +13,14 @@
 <body>
     <header>
         <ul class="test">
-            <li><a href="#">Main</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#main">Main</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
     <main>
-        <div class="main">
+        <section id="main">
             <div class="txt">
                 <h1>PORTFOLIO</h1><br>
                 <h3>Web Design</h3>
@@ -30,8 +30,8 @@
                     <line y1="10" x2="1920" y2="10" stroke="#0059FF" stroke-width="20" class="line1"/>
                 </svg>
             </div>
-        </div>
-        <div class="about">
+        </section>
+        <section id="about">
             <div class="aboutwrap">
                 <div class="proflie1">
                     <div class="imgbox"></div>
@@ -118,7 +118,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <section id="joineg">
         <div class="txtbox">
             <!-- 내용은 inline 태그를 사용한다 -->
@@ -135,7 +135,7 @@
         </div>
     </section>
     
-        <div class="work">
+        <section id="work">
             <h1>DESIGN WORK</h1>
             <ul class="works">
                 <li>
@@ -194,7 +194,7 @@
                 </li>
                 <li>
                     <a href="#">
-                        <img src="./images/imac-mockup-at-a-workstation-desk-a21161.jpg alt="">
+                        <img src="./images/imac-mockup-at-a-workstation-desk-a21161.jpg" alt="">
                         <div class="txt">
                             <h3>Design PC</h3>
                         </div>
@@ -211,8 +211,7 @@
             </ul>
         </div>
         <div class="mywork">
-            <h1 class="left">MY</h1>
-            <h1 class="right">WORK</h1>
+            <h1>MY WORK</h1>
         </div>
         <section class="section">
         <div class="wrap">
@@ -348,13 +347,16 @@
             </div>
         </div>
     </section>
-    </main>
-    <section class="contact">
-        <h1>CONTACT</h1>
-        <div class="gall">
-            <p>enabia1004@gmail.com</p>
-            <p>010-5262-8092</p>
+    <section id="contact">
+        <div class="txtbox">
+            <h1>CONTACT</h1>
         </div>
+        <ul class="lock">
+            <li>enabia1004@gmail.com</li>
+            <li>010-5262-8092</li>
+            <li>kakaoTalk</li>
+        </ul>
     </section>
+    </main>
 </body>
 </html>
